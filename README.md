@@ -1,5 +1,7 @@
 # SME (Small-to-Medium Enterprise) MENTORING APPLICATION
-University (SEM 2) final project building web application to help SMEs grow their business by establishing mentoring program with field experts and providing connections to company who wants to conduct their CSR program. 
+University (SEM 2) final project building web application to help SMEs grow their business by establishing mentoring program with field experts and providing connections to company who wants to conduct their CSR program.
+<br /><br />
+_For further information about the app refer to_ ```docs/about.md```
 
 ## TO RUN
 Requirements:
