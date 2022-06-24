@@ -15,7 +15,7 @@ Companies who willing to conduct their CSR program through our application.
 
 ## HOW THE APP WORKS
 
-**_For more detailed info regarding features refer to_** `docs/activity_diagram.drawio`<br/>
+**_For more detailed info regarding features refer to_** `docs/activity_diagram.drawio`<br/><br />
 There are 2 kinds of user who participate in this application: a business owner and experts.<br /><br />
 **_As a business owner_**:
 You create a business page, fill in the information about your business, the problem you currently facing, and upload a business problem proposal file which further describe in detail about your business problem and what you want to do to solve/improve your business. Your business page can be viewed by experts who might be interested in your problem and willing to offer their mentoring program. On the other hand you can also find mentor program created by experts and offer a request to be mentored by that specific expert.
