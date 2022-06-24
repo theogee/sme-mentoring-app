@@ -1,0 +1,75 @@
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: #5F2EEA;
+}
+
+form {
+	margin-top: 20px;
+	width: 600px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+input[id="ajax-owner-name"],
+input[id="ajax-owner-email"],
+input[id="ajax-owner-password"] {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+input[id="ajax-owner-name"]:-webkit-autofill,
+input[id="ajax-owner-email"]:-webkit-autofill,
+input[id="ajax-owner-password"]:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #EFF0F6 inset !important;
+}
+
+.owner-name,
+.owner-email,
+.owner-province,
+.owner-city,
+.owner-password {
+	background-color: #EFF0F6;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+label[for^="ajax"] {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #6E7191;
+}
+
+label[for="ajax-owner-password"] {
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type="submit"] {
+	width: 53%;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #5F2EEA;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}

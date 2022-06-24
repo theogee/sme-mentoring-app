@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/general/general.css?v=1">
+	<link rel="stylesheet" href="../css/login.css">
+	<title>Login</title>
+</head>
+<body>
+	<form action="auth/login_confirm.php" method="POST">
+		<h1>LOG IN</h1>
+		<div class="login-option">
+			<input type="radio" name="login-as" value="business-owner" checked><span class="login-label">business owner</span>
+			<input type="radio" name="login-as" value="expert"><span class="login-label">expert</span>
+		</div>
+		
+		<div class="email-input">
+			<label for="email">Email</label>
+			<input id="email" type="email" name="email" required>
+		</div>
+
+		<div class="password-input">
+			<label for="password">Password</label>
+			<input id="password" type="password" name="password" required>
+		</div>
+
+		<input type="submit" value="Log In">
+		<p>Don't have an account? <a href="register.html">Register here</a></p>
+		<a href="../index.php">home</a>
+	</form>
+</body>
+</html>

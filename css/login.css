@@ -1,0 +1,73 @@
+form {
+	width: 600px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.login-option {
+	width: 40%;
+	margin-bottom: 40px;
+}
+
+.login-label {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input[value="expert"] {
+	margin-left: 20px;
+}
+
+input[name="email"], 
+input[name="password"] {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+input[name="email"]:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #EFF0F6 inset !important;
+	/*-webkit-text-fill-color: #555ca3;*/
+}
+
+.email-input,
+.password-input {
+	background-color: #EFF0F6;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+label[for="email"],
+label[for="password"] {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #6E7191;
+}
+
+input[type="submit"] {
+	width: 53%;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #5F2EEA;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}

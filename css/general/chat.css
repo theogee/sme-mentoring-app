@@ -1,0 +1,101 @@
+#chat-box {
+	width: 100%;
+	height: 400px;
+	overflow-y: auto;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+#chat-interface {
+	margin-top: 30px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#text-box {
+	width: 950px;
+	border: 2px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.textarea[contenteditable]:empty::before {
+  content: "Enter a message";
+  color: gray;
+}
+
+#send-btn {
+	width: 90px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 3px 10px;
+	font-size: 13px;
+	font-weight: bold;
+	border: 2px solid #5F2EEA;
+	background-color: white;
+	border-radius: 3px;
+	color: #5F2EEA;
+	transition: all 0.2s ease;
+	font-family: inherit;
+	cursor: pointer;
+}
+
+#send-btn:hover {
+	background-color: #5F2EEA;
+	color: white;
+}
+
+#begin-msg {
+	text-align: center;
+}
+
+#begin-msg span {
+	display: inline-block;
+	background-color: black;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 10px;
+}
+
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.chat-bubble {
+	display: flex;
+	align-items: flex-end;
+}
+
+.self {
+	justify-content: flex-end;
+}
+
+.chat-dt {
+	align-self: flex-end;
+	margin: 0 5px;
+	color: grey;
+}
+
+.self .chat-info {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.chat-msg {
+	max-width: 60%;
+	display: inline-block;
+	background-color: black;
+	color: white;
+	border-radius: 5px;
+	padding: 5px 10px;
+	margin-top: 5px;
+}
+
+.self .chat-msg {
+	background-color: #5F2EEA;
+}

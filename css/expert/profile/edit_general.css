@@ -1,0 +1,115 @@
+main {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+h1 {
+	color: #5F2EEA;
+}
+
+#program-name {
+	border: none;
+	outline: none;
+	background-color: transparent;
+	-webkit-box-shadow: 0 0 0 30px #EFF0F6 inset !important;
+}
+
+.textarea {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	min-height: 20px;
+	line-height: 20px;
+	padding-bottom: 5px;
+	margin-top: 10px;
+	border-bottom: 2px solid #5F2EEA;
+	outline: none;
+}
+
+.program-name,
+.program-category,
+.program-viewlevel,
+.program-mincost,
+.program-maxcost,
+.program-duration {
+	background-color: #EFF0F6;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+label[for="program-name"],
+label[for="ajax-category"],
+label[for="view-level"],
+label[for="min-cost"],
+label[for="max-cost"],
+label[for="program-duration"] {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #6E7191;
+}
+
+/* short-input style */
+.short-input {
+	background-color: white;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	padding-top: 20px;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+
+.left, .right {
+	width: 425px;
+}
+/* end of short-input style */
+
+label[for="focus-problem-desc"],
+label[for="about"],
+label[for="expected-outcome"], 
+label[for="file"] {
+	color: #5F2EEA;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.program-focus,
+.program-about,
+.program-outcome,
+.program-proposal {
+	background-color: white;
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+	padding: 20px;
+	border-radius: 5px;
+	margin: 30px 0;
+}
+
+#file-btn-container {
+	margin-top: 10px;
+}
+
+#update-btn {
+	display: inline-block;
+	text-decoration: none;
+	padding: 3px 10px;
+	font-size: 15px;
+	font-weight: bold;
+	border: 1px solid #5F2EEA;
+	border-radius: 3px;
+	/*background-color: #EFF0F6;*/
+	background-color: white;
+	color: #5F2EEA;
+	transition: all 0.2s ease;
+	font-family: inherit;
+	cursor: pointer;
+	
+}
+
+#update-btn:hover {
+	background-color: #5F2EEA;
+	color: white;
+}

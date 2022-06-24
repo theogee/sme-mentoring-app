@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/general/general.css?v=1">
+	<link rel="stylesheet" href="../css/register.css">
+	<title>Register</title>
+</head>
+<body>
+	<main>
+		<h1>Register</h1>
+		<div class="register-option">
+			<input type="radio" name="user-type" value="owner" checked><span class="register-label">business owner</span>
+			<input type="radio" name="user-type" value="expert"><span class="register-label">expert</span>
+		</div>
+		<section id="register-as-owner">
+			<form action="auth/register_bisown.php" method="post" autocomplete="off">
+				<div class="left-column">
+					<div class="name-input">
+				       	<label for="owner-name" class="input-label">Name<span class="required">*</span></label>
+				        <input type="text" id="owner-name" name="name" required>
+			    	</div>
+
+			    	<div class="email-input">
+				        <label for="owner-email" class="input-label">Email<span class="required">*</span></label>
+				        <input type="email" id="owner-email" name="email" required>
+			       	</div>
+
+			       	<div class="password-input">
+				        <label for="owner-password" class="input-label">Password<span class="required">*</span></label>
+				        <input type="password" id="owner-password" name="password" required>
+			        </div>
+				</div>
+				<div class="right-column">
+			        <div class="province-input">
+				        <label for="owner-ajax-province" class="input-label">Province<span class="required">*</span></label>
+				        <select id="owner-ajax-province" required></select>
+			        </div>
+
+			        <div class="city-input">
+				        <label for="owner-ajax-city" class="input-label">City<span class="required">*</span></label>
+				        <select name="cityID" id="owner-ajax-city" disabled required>
+				            <option value="" disabled selected hidden>please choose...</option>
+				        </select>
+				    </div>
+
+		       		<input type="submit" value="Register">
+				</div>
+		    </form>
+		</section>
+		<section id="register-as-expert" style="display:none">
+			<form action="auth/register_expert.php" method="post" autocomplete="off">
+				<div class="left-column">
+					<div class="name-input">
+				        <label for="expert-name" class="input-label">Name<span class="required">*</span></label>
+				        <input type="text" id="expert-name" name="name" required>
+			    	</div>
+
+			    	<div class="email-input">
+				        <label for="expert-email" class="input-label">Email<span class="required">*</span></label>
+				        <input type="email" id="expert-email" name="email" required>
+			    	</div>
+
+			    	<div class="password-input">
+				        <label for="expert-password" class="input-label">Password<span class="required">*</span></label>
+				        <input type="password" id="expert-password" name="password" required>
+			    	</div>
+
+			    	<div class="company-input">
+				        <label for="company" class="input-label">Company<span class="required">*</span></label>
+				        <input type="text" id="company" name="company" required>
+			    	</div>
+				</div>
+
+				<div class="right-column">
+			    	<div class="profession-input">
+				        <label for="profession" class="input-label">Profession<span class="required">*</span></label>
+				        <input type="text" id="profession" name="profession" required>
+			    	</div>
+
+			    	<div class="province-input">
+				        <label for="expert-ajax-province" class="input-label">Province<span class="required">*</span></label>
+				        <select id="expert-ajax-province" required></select>
+			    	</div>
+
+			    	<div class="city-input">
+				        <label for="expert-ajax-city" class="input-label">City<span class="required">*</span></label>
+				        <select name="cityID" id="expert-ajax-city" required disabled>
+				            <option value="" disabled selected hidden>please choose...</option>
+				        </select>
+			    	</div>
+
+			        <input type="submit" value="Register">
+				</div>
+
+		    </form>
+		</section>
+		<br>
+		<p>Already have an account? <a href="login.html">Login here</a></p>
+		<a href="../index.php">home</a>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="../js/register/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+.required {
+	color: #eb4034;
+}
+
+main {
+	width: 900px;
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.register-option {
+	width: 40%;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.register-label {
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input[value="expert"] {
+	margin-left: 30px;
+}
+
+#register-as-owner,
+#register-as-expert {
+	width: 70%;
+}
+
+#register-as-owner form,
+#register-as-expert form {
+	display: flex;
+	justify-content: space-between;
+	/*background-color: lightgreen;*/
+}
+
+.right-column,
+.left-column {
+	width: 300px;
+	/*background-color: red;*/
+}
+
+input[name="name"],
+input[name="email"],
+input[name="password"],
+input[name="company"],
+input[name="profession"] {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.name-input,
+.email-input,
+.password-input,
+.province-input,
+.city-input,
+.company-input,
+.profession-input {
+	background-color: #EFF0F6;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.input-label {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #6E7191;
+	margin-bottom: 5px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: #5F2EEA;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+
+
+

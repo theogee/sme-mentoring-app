@@ -1,0 +1,13 @@
+body {
+	display: flex;
+	align-items: center;
+}
+
+#chat {
+	width: 100%;
+	margin-left: 50px;
+}
+
+#text-box {
+	width: 750px;
+}

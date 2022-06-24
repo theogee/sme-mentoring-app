@@ -1,0 +1,50 @@
+header nav {
+	padding: 10px 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+header a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #5F2EEA;
+}
+
+.logo-wrapper {
+	font-weight: bold;
+	font-size: 36px;
+}
+
+.middle-column {
+	width: 400px;
+	font-size: 15px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.right-column {
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.profile-icon {
+	width: 35px;
+	padding-top: 5px;
+}
+
+.logout-icon {
+	width: 27px;
+}
+
+#logout-btn {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+}

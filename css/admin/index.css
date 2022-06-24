@@ -1,0 +1,7 @@
+a {
+	text-decoration: none;
+}
+
+.selected-link {
+	border-bottom: 2px solid black;
+}

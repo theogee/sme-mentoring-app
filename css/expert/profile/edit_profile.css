@@ -1,0 +1,91 @@
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	color: #5F2EEA;
+}
+
+form {
+	margin-top: 20px;
+	width: 800px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: white;
+	border-radius: 10px;
+	padding: 20px;
+
+	box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+#expert-name,
+#expert-email,
+#expert-password,
+#company,
+#profession {
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+#expert-name:-webkit-autofill,
+#expert-email:-webkit-autofill,
+#expert-password:-webkit-autofill,
+#company:-webkit-autofill,
+#profession:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #EFF0F6 inset !important;
+}
+
+.expert-name,
+.expert-email,
+.expert-password,
+.expert-province,
+.expert-city,
+.expert-company,
+.expert-profession {
+	background-color: #EFF0F6;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+label {
+	line-height: 1.5;
+	font-weight: bold;
+	color: #6E7191;
+}
+
+label[for="expert-password"] {
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type="submit"] {
+	width: 53%;
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #5F2EEA;
+	color: white;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+.short-input {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.left, .right {
+	width: 370px;
+}
